@@ -1,0 +1,8 @@
+gcc main.c fioFormatSupport.c outputFuncs/outputString.c outputFuncs/outputChar.c outputFuncs/handle_write_to_var.c float/outputFloat.c float/outputFloat_F.c float/bigint.c float/outputFloat_e.c float/outputFloat_E.c hex_float/outputFloat_a.c hex_float/outputFloat_A.c integer_out/*
+#gcc main.c fioFormatSupport.c outputFuncs/*.c float/outputFloat.c float/outputFloat_F.c float/bigint.c float/outputFloat_e.c float/outputFloat_E.c hex_float/outputFloat_a.c hex_float/outputFloat_A.c 
+./a.out
+
+
+#gcc -fprofile-arcs -ftest-coverage main.c fioFormatSupport.c outputInt.c
+#./a.out
+#gcov main.c fioFormatSupport.c outputInt.c
